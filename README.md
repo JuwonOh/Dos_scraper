@@ -1,4 +1,4 @@
-# CSIS_scraper
+# Dos_scraper
 
 미국 국무부(United States Department of State)의 분석들을 받아오기 위한 크롤러입니다.
 
