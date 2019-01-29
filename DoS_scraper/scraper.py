@@ -13,8 +13,7 @@ def get_latest_allnews(last_date, sleep=1.0):
 
     raise NotImplemented
 
-patterns_transcript = [
-    re.compile('https://www.state.gov/[\w]+')]
+patterns = [re.compile('https://www.state.gov/[\w]+')]
 base_url = 'https://www.state.gov/r/pa/prs/ps/{}/index.htm'
 
 def get_allnews_urls(begin_year=2018, end_year=2019, verbose=True):
@@ -48,13 +47,3 @@ def get_allnews_urls(begin_year=2018, end_year=2019, verbose=True):
     links_all = ['https://www.state.gov' + i for i in links_all]
 
     return links_all
-
-def get_last_page_num():
-    """
-    Returns
-    -------
-    page : int
-        Last page number.
-        eg: 503 in 'https://dod.defense.gov/News/Transcripts/?Page=62'
-    """
-    raise NotImplemented

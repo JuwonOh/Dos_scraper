@@ -23,10 +23,9 @@ def parse_page(url):
 
     try:
         soup = get_soup(url)
-        title = soup.find('div', class_= 'article-body').find('h1').text
-        time = soup.select('time')[0].text
-        phrases = soup.find('div', class_= 'article-body')
-        content = ''.join(re.split('[0-9]{1,2}, [0-9]{4}', re.sub('\n|\r|\xa0', '', phrases.text))[1:])
+        title = soup.find('h2', class_= 'title left').text
+        time = soup.find('div', id= 'date_long').text
+        content = soup.find('div', id = 'centerblock').text
 
         json_object = {
             'title' : title,
