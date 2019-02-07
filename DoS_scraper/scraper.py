@@ -52,7 +52,6 @@ def get_allnews_urls(begin_year=2018, end_year=2019, verbose=True):
 
     return links_all
 
-
 def yield_latest_allnews(begin_date, max_num=10, sleep=1.0):
     """
     Artuments
