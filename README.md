@@ -1,6 +1,6 @@
 # Dos_scraper
 
-미국 국무부(United States Department of State)의 speech와 보도자료들을 받아오기 위한 크롤러입니다.
+미국 국무부(United States Department of State)의 speech와 press release들을 받아오기 위한 크롤러입니다.
 
 ## User guide
 
